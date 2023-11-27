@@ -1,0 +1,22 @@
+.header{
+    width: 100%;
+    background-color: #92CEFA;
+}
+.header-container{
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-container-pic img{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+.header-container-text{
+    font-size: 64px;
+    color: #115485;
+}

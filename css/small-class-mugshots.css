@@ -1,0 +1,26 @@
+.mugshots{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 40px;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    border: #115485 1px solid;
+    border-radius: 50px;
+}
+.card a{
+    text-decoration: none;
+    
+}
+.name{
+    margin-top: -20px;
+    text-align: center;
+    font-size: 20px;
+    color: #115485;
+    margin-bottom: 25px;
+    margin-top:10px;
+}

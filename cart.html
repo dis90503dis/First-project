@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>顯示選擇的數值</title>
+<link rel="stylesheet" href="css/cart-billing-model.css">
+<link rel="stylesheet" href="css/cart-quantity.css">
+<link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <div class="billing-model">
+        <div class="billing-container">
+            <label for="numericSelect">
+                計費模式
+            </label>
+            <select class="plan1-n" id="numericSelect" onchange="displaySelectedValue()">
+                <option value="200">標準模式 200幣/局</option>
+                <option value="180">ARAM 180幣/局</option>
+                <option value="250">Rank250幣/局</option>
+            </select>
+        </div>
+    </div>
+    <div class="payment-method">
+        <div class="payment-method-text">
+            支付方式
+        </div>
+        <div class="balance">
+            <div class="balance-pay">餘額支付</div>
+            <div class="balance-pay-text">0幣可用</div>
+        </div>
+    </div>
+    <div class="plan" id="selectedValue">200幣/局</div>
+    <div class="counter-container">
+        <button class="reduce" onclick="decrement()">-</button>
+        <input class="quantity" type="text" id="counter" value="0" readonly>
+        <button class="increase" onclick="increment()">+</button>
+    </div>
+    <script>
+    function displaySelectedValue() {
+        var selectElement = document.getElementById('numericSelect');
+        var selectedValue = selectElement.value;
+        var displayElement = document.getElementById('selectedValue');
+        document.getElementById("selectedValue").innerHTML = selectedValue + '幣/局';
+    }
+    </script>
+    <script>
+    var counterInput = document.getElementById('counter');
+    function increment() {
+        counterInput.value = parseInt(counterInput.value, 10) + 1;
+    }
+    function decrement() {
+        var currentValue = parseInt(counterInput.value, 10);
+        if (currentValue > 0) {
+        counterInput.value = currentValue - 1;
+        }
+    }
+    </script>    
+</body>
+</html>

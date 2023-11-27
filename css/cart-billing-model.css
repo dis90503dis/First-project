@@ -1,0 +1,26 @@
+.billing-model{
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    margin: auto;
+    font-size: 24px;
+    color: #115485;
+    border-top: 1px solid #115485;
+    border-bottom: 1px solid #115485;
+    }
+.billing-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.plan1-n{
+    font-size: 20px;
+    border: none;
+    background-color: #DCEBF8;
+    letter: spacing 2px;
+    width: 360px;
+    height: 50px;
+    padding: 13px 23px 13px 23px;
+    border-radius: 5px;
+}

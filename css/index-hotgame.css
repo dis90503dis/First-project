@@ -1,0 +1,38 @@
+.hotgame{
+    max-width: 1200px;
+    margin: auto;
+}
+.hotgame-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.hotgame-text a{
+    text-decoration: none;
+    margin-top: 75px;
+    margin-bottom: 40px;
+}
+.hotgame-text h2{
+    font-size: 48px;
+    color: #115485;
+}
+.hotgame-more{
+    font-size: 16px;
+    color: #115485;
+}
+.hotgame-container{
+    display: flex;
+    justify-content: space-between;
+}
+.hotgame-card{
+    width: 210px;
+}
+.hotgame-card img{
+    width: 100%;
+}
+.hotgame-card-img-alt{
+    margin-top: 12px;
+    text-align: center;
+    font-size: 24px;
+    color: #115485;
+}

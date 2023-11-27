@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: auto;
+    justify-content: start;
+    align-items: center;
+}
+.place-an-order{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.step1-6{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+h3{
+    font-size: 48px;
+}
+.step-icon{
+    font-size: 36px;
+    margin: 15px;
+}
+.step-text{
+    border-bottom: 1px solid #115485;
+}
+h2{
+    font-size: 36px;
+}
+.quick{
+    text-align: center;
+}
+.simply-put{
+    text-align: center;
+}
+.simply-put-container{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+.step-link{
+    font-size: 24px;
+}

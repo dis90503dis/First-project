@@ -1,0 +1,39 @@
+.game-ranking{
+    width: 1200px;
+    margin: auto;
+}
+.game-ranking-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 40px;
+    margin-top: 75px;
+}
+.game-ranking-head a{
+    text-decoration: none;
+}
+.game-ranking-head-title{
+    font-size: 48px;
+    color: #115485;
+}
+.game-ranking-head-more{
+    font-size: 16px;
+    color: #115485;
+}
+.game-top10{
+    display: flex;
+    justify-content: space-between;
+}
+.game-top1-10{
+    width: 470px;
+    height: 35px;
+    background-color: #DCEBF8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #115485;
+    padding-left: 10px;
+    padding-right: 10px;
+}
