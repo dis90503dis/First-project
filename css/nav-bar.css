@@ -1,6 +1,10 @@
 input:focus{
     outline: none;
-}.navbar{
+}
+body {
+    font-family: 'Happy Monkey', sans-serif;
+}
+.navbar{
     display: flex;
     max-width: 1200px;
     height: 100px;
