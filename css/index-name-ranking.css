@@ -25,6 +25,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.name-top10 a{
+    text-decoration: none;
+}
 .name-ranking-container{
     display: flex;
     flex-direction: column;

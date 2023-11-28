@@ -24,6 +24,9 @@
     display: flex;
     justify-content: space-between;
 }
+.hotgame-container a{
+    text-decoration: none;
+}
 .hotgame-card{
     width: 210px;
 }
