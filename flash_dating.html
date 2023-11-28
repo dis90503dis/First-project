@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>極速約單</title>
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/flash_dating.css">
+    <link rel="stylesheet" href="css/flash_dating_flash-wait.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <input class="navbar-search" type placeholder="陪玩師ID或暱稱">
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/share-img/LOGO.svg" alt="logo">
+            </a>
+        </div>
+        <div class="nav-button">
+            <a class="flash-button" href="">
+                <img src="img/share-img/flashicon.svg" alt="icon">
+                <div class="text">快速約單</div>
+            </a>
+            <a class="login-button" href="">
+                <div class="text">登入 / 註冊</div>
+            </a>
+        </div>
+    </nav>
+    <div class="flash-banner">
+        <div class="flash-title">
+            <h1>急速約單</h1>
+            <div class="describe-h1">陪玩師在線搶單，快速為您匹配</div>
+        </div>
+        <div class="options">
+            <div class="option-title">
+                <h2>我要約單</h2>
+                <div class="find">想找什麼樣的陪玩師？</div>
+            </div>
+            <select id="game" class="plan1-n">
+                <option>遊戲名稱:</option>
+                <option>原神</option>
+                <option>語音交流</option>
+                <option>永劫無間</option>
+                <option>小鬧鐘</option>
+                <option>APEX</option>
+                <option>傳說對決</option>
+                <option>特戰英豪</option>
+                <option>英雄聯盟</option>
+            </select>
+
+            <select id="gender" class="plan1-n">
+                <option>不限</option>
+                <option>男生</option>
+                <option>女生</option>
+                <option>其他</option>
+            </select>
+
+            <input id="remark" class="remark" type="text" placeholder="備註">
+
+            <button id="btn" class="option-button">我要下單</button>
+        </div>
+    </div>
+
+    <div class="flash-wait">
+        <h3>等待中的約單</h3>
+        <div id="flashWaitContainer" class="flash-wait-container">
+            <div id="finding" class="finding">
+                <div class="wait-name">于靖</div>
+                <div class="solid"></div>
+                <div class="flash-game">原神</div>
+                <div class="flash-gender">女生</div>
+                <div class="flash-remark">聲音好聽</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="footer-with-help-more">
+            <div class="footer-container">
+                <div>with</div>
+                <a href="">成為陪玩師</a>
+                <a href="">關於我們</a>
+            </div>
+            <div class="footer-container">
+                <div>help</div>
+                <a href="">常見問題&教學</a>
+                <a href="">使用者條款</a>
+                <a href="">違法舉報</a>
+            </div>
+            <div class="footer-container">
+                <div>more</div>
+                <a href="">平台管理規範</a>
+                <a href="">免責聲明</a>
+            </div>
+        </div>
+        <div class="connection">
+            <div class="connection-title">
+                <div class="solid"></div>
+                <div class="connection-title-text">聯絡我們</div>
+                <div class="solid"></div>
+            </div>
+            <div class="mail">abcdefghijk@gmail.com</div>
+            <div class="icons">
+                <img src="img/share-img/fb_icon.svg" alt="icon">
+                <img src="img/share-img/ig_icon.svg" alt="icon">
+                <img src="img/share-img/yt_icon.svg" alt="icon">
+                <img src="img/share-img/apple_icon.svg" alt="icon">
+            </div>
+        </div>
+    </div>
+    <script src="js/flash_dating.js"></script>
+</body>
+</html>

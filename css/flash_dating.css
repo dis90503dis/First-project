@@ -1,0 +1,75 @@
+input:focus{
+    outline: none;
+}
+.flash-banner{
+    width: 100%;
+    background-color: #92CEFA;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.flash-title{
+    text-align: center;
+}
+h1{
+    color: #115485;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.describe-h1{
+    font-size: 24px;
+    color: #115485;
+    margin-bottom: 50px;
+}
+.options{
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 750px;
+    height: 480px;
+    border-radius: 15px;
+    background-color: #DCEBF8;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+h2{
+    font-size: 40px;
+    color: #115485;
+}
+.find{
+    font-size: 24px;
+    color: #115485;
+    margin-top: 20px;
+}
+.plan1-n{
+    width: 660px;
+    height: 55px;
+    border: #92CEFA 1px solid;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #115485;
+    text-align: center;
+}
+.remark{    
+    width: 660px;
+    height: 55px;
+    border: #92CEFA 1px solid;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #115485;
+    text-align: center;
+}
+.option-button{
+    width: 220px;
+    height: 55px;
+    background-color: #FF9999;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 20px;
+}
