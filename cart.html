@@ -4,11 +4,57 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>顯示選擇的數值</title>
+<link rel="stylesheet" href="css/nav-bar.css">
 <link rel="stylesheet" href="css/cart-billing-model.css">
 <link rel="stylesheet" href="css/cart-quantity.css">
 <link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div>
+            <input class="navbar-search" type placeholder="陪玩師ID或暱稱">
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/share-img/LOGO.svg" alt="logo">
+            </a>
+        </div>
+        <div class="nav-button">
+            <a class="flash-button" href="">
+                <img src="img/share-img/flashicon.svg" alt="icon">
+                <div class="text">快速約單</div>
+            </a>
+            <a class="login-button" href="">
+                <div class="text">登入 / 註冊</div>
+            </a>
+        </div>
+    </nav>
+    <div class="cart-confirm">
+        <div class="cart-confirm-text">
+            確認訂單
+        </div>
+    </div>
+    <div class="commodity">
+        <div class="commodity-describe">
+            <div class="commodity-pic">
+                <img src="img/心海/心海.svg" alt="avatar">
+            </div>
+            <div class="describe-contaimer">
+                <div class="commodity-name">心海</div>
+                <div class="commodity-gamename">英雄聯盟</div>
+            </div>
+        </div>
+        <div class="counter-container">
+            <button class="reduce" onclick="decrement()">-</button>
+            <input class="quantity" type="text" id="counter" value="0" readonly>
+            <button class="increase" onclick="increment()">+</button>
+        </div>
+    </div>
+    
+    
+    
+    
     <div class="billing-model">
         <div class="billing-container">
             <label for="numericSelect">
@@ -21,6 +67,9 @@
             </select>
         </div>
     </div>
+
+
+
     <div class="payment-method">
         <div class="payment-method-text">
             支付方式
@@ -30,31 +79,49 @@
             <div class="balance-pay-text">0幣可用</div>
         </div>
     </div>
+
+
+    
+    
+
     <div class="plan" id="selectedValue">200幣/局</div>
-    <div class="counter-container">
-        <button class="reduce" onclick="decrement()">-</button>
-        <input class="quantity" type="text" id="counter" value="0" readonly>
-        <button class="increase" onclick="increment()">+</button>
+
+
+
+    <div class="footer">
+        <div class="footer-with-help-more">
+            <div class="footer-container">
+                <div>with</div>
+                <a href="">成為陪玩師</a>
+                <a href="">關於我們</a>
+            </div>
+            <div class="footer-container">
+                <div>help</div>
+                <a href="">常見問題&教學</a>
+                <a href="">使用者條款</a>
+                <a href="">違法舉報</a>
+            </div>
+            <div class="footer-container">
+                <div>more</div>
+                <a href="">平台管理規範</a>
+                <a href="">免責聲明</a>
+            </div>
+        </div>
+        <div class="connection">
+            <div class="connection-title">
+                <div class="solid"></div>
+                <div class="connection-title-text">聯絡我們</div>
+                <div class="solid"></div>
+            </div>
+            <div class="mail">abcdefghijk@gmail.com</div>
+            <div class="icons">
+                <img src="../個人專題素材_資料/首頁資料/fb_icon.svg" alt="icon">
+                <img src="../個人專題素材_資料/首頁資料/ig_icon.svg" alt="icon">
+                <img src="../個人專題素材_資料/首頁資料/yt_icon.svg" alt="icon">
+                <img src="../個人專題素材_資料/首頁資料/apple_icon.svg" alt="icon">
+            </div>
+        </div>
     </div>
-    <script>
-    function displaySelectedValue() {
-        var selectElement = document.getElementById('numericSelect');
-        var selectedValue = selectElement.value;
-        var displayElement = document.getElementById('selectedValue');
-        document.getElementById("selectedValue").innerHTML = selectedValue + '幣/局';
-    }
-    </script>
-    <script>
-    var counterInput = document.getElementById('counter');
-    function increment() {
-        counterInput.value = parseInt(counterInput.value, 10) + 1;
-    }
-    function decrement() {
-        var currentValue = parseInt(counterInput.value, 10);
-        if (currentValue > 0) {
-        counterInput.value = currentValue - 1;
-        }
-    }
-    </script>    
+    <script src="js/cart.js"></script>
 </body>
 </html>

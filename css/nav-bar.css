@@ -15,7 +15,7 @@ input:focus{
     border-radius: 90px;
     font-size: 16px;
     text-align: center;
-    background-image: url("放大鏡.svg");
+    background-image: url('../img/share-img/放大鏡.svg');
     background-size: 35px 35px;
     background-repeat: no-repeat; 
     background-position: left 10%  top 50%;
