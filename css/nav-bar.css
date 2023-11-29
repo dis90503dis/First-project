@@ -3,6 +3,11 @@ input:focus{
 }
 body {
     font-family: 'Happy Monkey', sans-serif;
+    background-color: #F7F4F7;
+}
+.navbar-bgc{
+    width: 100%;
+    background-color: #fff;
 }
 .navbar{
     display: flex;

@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     planButtons.addEventListener('click', function(event) {
         if (event.target.tagName === 'BUTTON') {
-            planPrice.textContent = '價格: ' + event.target.innerText;
+            planPrice.textContent = event.target.innerText;
         }
     });
 });
