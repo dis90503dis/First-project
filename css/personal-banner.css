@@ -1,0 +1,21 @@
+.personal-banner{
+    width: 100%;
+    height: 600px;
+    background-color: #92CEFA;
+}
+.personal-container{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.personal-name{
+    font-size: 36px;
+}
+.introduce-container{
+    width: 600px;
+    height: 100px;
+    background-color: #BBE0FC;
+}
