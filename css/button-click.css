@@ -1,9 +1,11 @@
-.name-button-team button:active,
-.plan-button-team button:active {
-    outline: 1px solid #115485; /* 点击时添加红色外框线，你可以根据需要更改颜色 */
-}
+@media (min-width:1200px) {
+    .name-button-team button:active,
+    .plan-button-team button:active {
+        outline: 1px solid #115485; /* 点击时添加红色外框线，你可以根据需要更改颜色 */
+    }
 
-.name-button-team button:focus,
-.plan-button-team button:focus {
-    outline: 1px solid #115485; /* 获取焦点时添加红色外框线，你可以根据需要更改颜色 */
+    .name-button-team button:focus,
+    .plan-button-team button:focus {
+        outline: 1px solid #115485; /* 获取焦点时添加红色外框线，你可以根据需要更改颜色 */
+    }
 }

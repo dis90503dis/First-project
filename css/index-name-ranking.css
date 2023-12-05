@@ -1,73 +1,75 @@
-.name-ranking{
-    width: 1200px;
-    margin: auto;
-}
-.name-ranking-head{
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    margin-bottom: 40px;
-    margin-top: 55px;
-}
-.name-ranking-head a{
-    text-decoration: none;
-}
-.name-ranking-head-title{
-    font-size: 48px;
-    color: #115485;
-}
-.name-ranking-head-more{
-    font-size: 16px;
-    color: #115485;
-}
-.name-top10{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.name-top10 a{
-    text-decoration: none;
-}
-.name-ranking-container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 568px;
-    height: 146px;
-    border-radius: 33px;
-    background-color: #dcebf8;
-    margin: 0 16px 16px 16px;
-    padding: 16px;
-    box-sizing: border-box;
-}
-.mugshots{
-    width: 115px;
-    height: 115px;
-    margin-right: 13px;
-}
-.name{
-    font-size: 24px;
-    color: #115485;
-    display: block;
-    margin-bottom: 6px;
-}
-.introduction{
-    font-size: 16px;
-    color: #4E82A8;
-    display: block;
-    width: 350px;
-    height: 50px;
-    margin-top: 8px;
-    margin-bottom: 6px;
-}
-.price{
-    font-size: 20px;
-    color: #115485;
-    display: block;
-    flex-grow: 1;
-}
-.voice-icon{
-    width: 40px;
-    height: 40px;
-    flex-grow: 1;
+@media (min-width:1200px) {
+    .name-ranking{
+        width: 1200px;
+        margin: auto;
+    }
+    .name-ranking-head{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 40px;
+        margin-top: 55px;
+    }
+    .name-ranking-head a{
+        text-decoration: none;
+    }
+    .name-ranking-head-title{
+        font-size: 48px;
+        color: #115485;
+    }
+    .name-ranking-head-more{
+        font-size: 16px;
+        color: #115485;
+    }
+    .name-top10{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .name-top10 a{
+        text-decoration: none;
+    }
+    .name-ranking-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 568px;
+        height: 146px;
+        border-radius: 33px;
+        background-color: #dcebf8;
+        margin: 0 16px 16px 16px;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+    .mugshots{
+        width: 115px;
+        height: 115px;
+        margin-right: 13px;
+    }
+    .name{
+        font-size: 24px;
+        color: #115485;
+        display: block;
+        margin-bottom: 6px;
+    }
+    .introduction{
+        font-size: 16px;
+        color: #4E82A8;
+        display: block;
+        width: 350px;
+        height: 50px;
+        margin-top: 8px;
+        margin-bottom: 6px;
+    }
+    .price{
+        font-size: 20px;
+        color: #115485;
+        display: block;
+        flex-grow: 1;
+    }
+    .voice-icon{
+        width: 40px;
+        height: 40px;
+        flex-grow: 1;
+    }
 }

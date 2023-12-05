@@ -1,73 +1,75 @@
 input:focus{
     outline: none;
 }
-body {
-    font-family: 'Happy Monkey', sans-serif;
-    background-color: #F7F4F7;
-}
-.navbar-bgc{
-    width: 100%;
-    background-color: #fff;
-}
-.navbar{
-    display: flex;
-    max-width: 1200px;
-    height: 100px;
-    align-items: center;
-    justify-content:space-between;
-    margin: auto;
-}
-.navbar-search{
-    width: 217px;
-    height: 40px;
-    border: #92CEFA 3px solid;
-    border-radius: 90px;
-    font-size: 16px;
-    text-align: center;
-    background-image: url('../img/share-img/放大鏡.svg');
-    background-size: 35px 35px;
-    background-repeat: no-repeat; 
-    background-position: left 10%  top 50%;
-}
-.nav-button{
-    display: flex;
-}
-.logo{
-    position: relative;
-    left: 5.5%;
-    top: 7%;
-}
-.login-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #FFF;
-    background-color: #FF9999;
-    border-radius: 90px;
-    width: 147px;
-    height: 46px;
-    margin: 12px;
-}
-.flash-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #FFF;
-    background-color: #FF9999;
-    border-radius: 90px;
-    width: 147px;
-    height: 46px;
-    margin: 12px;
-}
-.flash-button img {
-    display: inline-block; 
-    width: 15px; 
-    height: 25px;
-}
-.text {
-    display: inline-block;
-    margin: 3px;
-    font-size: 16px;
+@media (min-width:1200px) {
+    body {
+        font-family: 'Happy Monkey', sans-serif;
+        background-color: #F7F4F7;
+    }
+    .navbar-bgc{
+        width: 100%;
+        background-color: #fff;
+    }
+    .navbar{
+        display: flex;
+        max-width: 1200px;
+        height: 100px;
+        align-items: center;
+        justify-content:space-between;
+        margin: auto;
+    }
+    .navbar-search{
+        width: 217px;
+        height: 40px;
+        border: #92CEFA 3px solid;
+        border-radius: 90px;
+        font-size: 16px;
+        text-align: center;
+        background-image: url('../img/share-img/放大鏡.svg');
+        background-size: 35px 35px;
+        background-repeat: no-repeat; 
+        background-position: left 10%  top 50%;
+    }
+    .nav-button{
+        display: flex;
+    }
+    .logo{
+        position: relative;
+        left: 5.5%;
+        top: 7%;
+    }
+    .login-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #FFF;
+        background-color: #FF9999;
+        border-radius: 90px;
+        width: 147px;
+        height: 46px;
+        margin: 12px;
+    }
+    .flash-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #FFF;
+        background-color: #FF9999;
+        border-radius: 90px;
+        width: 147px;
+        height: 46px;
+        margin: 12px;
+    }
+    .flash-button img {
+        display: inline-block; 
+        width: 15px; 
+        height: 25px;
+    }
+    .text {
+        display: inline-block;
+        margin: 3px;
+        font-size: 16px;
+    }
 }
