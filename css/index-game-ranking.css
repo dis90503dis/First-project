@@ -13,7 +13,7 @@
         text-decoration: none;
     }
     .game-ranking-head-title{
-        font-size: 20px;
+        font-size: 24px;
         color: #115485;
     }
     .game-ranking-head-more{
@@ -38,7 +38,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 12px;
+        font-size: 16px;
         color: #115485;
         margin: auto;
         padding: 5px;
