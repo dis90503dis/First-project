@@ -1,8 +1,53 @@
 input:focus{
     outline: none;
 }
+@media (width < 1200px) {
+    .navbar-bgc{
+        max-width: 360px;
+        background-color: #fff;
+    }
+    .navbar{
+        display: flex;
+        width: 340px;
+        height: 40px;
+        align-items: center;
+        justify-content:space-between;
+        margin: auto;
+    }
+    .logo{
+        width: 80px;
+        height: 35px;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .navbar-phone-search{
+        padding-top: 3px;
+        box-sizing: border-box;
+        padding-right: 4px;
+        width: 70px;
+        height: 15px;
+        border: #92CEFA 1px solid;
+        border-radius: 90px;
+        font-size: 12px;
+        text-align: right;
+        background-image: url('../img/share-img/放大鏡.svg');
+        background-size: 15px 15px;
+        background-repeat: no-repeat; 
+        background-position: left 10%;
+    }
+    .navbar-search-countainer{
+        display: none;
+    }
+    .navbar-search{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+}
 @media (min-width:1200px) {
-    body {
+    body{
         font-family: 'Happy Monkey', sans-serif;
         background-color: #F7F4F7;
     }
@@ -30,27 +75,14 @@ input:focus{
         background-repeat: no-repeat; 
         background-position: left 10%  top 50%;
     }
-    .nav-button{
-        display: flex;
-    }
     .logo{
         position: relative;
         left: 5.5%;
         top: 7%;
     }
-    .login-button{
+    .nav-button{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        color: #FFF;
-        background-color: #FF9999;
-        border-radius: 90px;
-        width: 147px;
-        height: 46px;
-        margin: 12px;
-    }
-    .flash-button {
+    }.flash-button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -67,9 +99,24 @@ input:focus{
         width: 15px; 
         height: 25px;
     }
+    .login-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #FFF;
+        background-color: #FF9999;
+        border-radius: 90px;
+        width: 147px;
+        height: 46px;
+        margin: 12px;
+    }
     .text {
         display: inline-block;
         margin: 3px;
         font-size: 16px;
+    }
+    .phone-search{
+        display: none;
     }
 }
