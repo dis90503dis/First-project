@@ -3,7 +3,7 @@ input:focus{
 }
 @media (width < 1200px) {
     .navbar-bgc{
-        max-width: 360px;
+        max-width: 100%;
         background-color: #fff;
     }
     .navbar{

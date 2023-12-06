@@ -1,6 +1,6 @@
 @media (width < 1200px) {
     .header{
-        width: 360px;
+        width: 100%;
         background-color: #92CEFA;
     }
     .banner{
