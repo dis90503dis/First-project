@@ -28,7 +28,7 @@ input:focus{
         width: 70px;
         height: 15px;
         border: #92CEFA 1px solid;
-        border-radius: 90px;
+        border-radius: 3px;
         font-size: 12px;
         text-align: right;
         background-image: url('../img/share-img/放大鏡.svg');
