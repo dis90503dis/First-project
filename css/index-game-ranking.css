@@ -1,3 +1,50 @@
+@media (width < 1200px) {
+    .game-ranking{
+        width: 360px;
+        margin: auto;
+    }
+    .game-ranking-head{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin: 0 10px 10px 10px;
+    }
+    .game-ranking-head a{
+        text-decoration: none;
+    }
+    .game-ranking-head-title{
+        font-size: 20px;
+        color: #115485;
+    }
+    .game-ranking-head-more{
+        font-size: 12px;
+        color: #115485;
+    }
+    .game-top10{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .game-top1-5 .game-top1-10:nth-child(even){
+        background-color: #fff;
+    }
+    .game-top6-10 .game-top1-10:nth-child(odd){
+        background-color: #fff;
+    }
+    .game-top1-10{
+        width: 340px;
+        height: 25px;
+        background-color: #DCEBF8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        color: #115485;
+        margin: auto;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+}
 @media (min-width:1200px) {
     .game-ranking{
         width: 1200px;
