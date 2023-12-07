@@ -1,6 +1,10 @@
 input:focus{
     outline: none;
 }
+body{
+    font-family: 'Happy Monkey', sans-serif;
+    background-color: #F7F4F7;
+}
 @media (width < 1200px) {
     .navbar-bgc{
         max-width: 100%;
@@ -22,19 +26,19 @@ input:focus{
         width: 100%;
     }
     .navbar-phone-search{
-        padding-top: 3px;
         box-sizing: border-box;
-        padding-right: 4px;
-        width: 70px;
-        height: 15px;
-        border: #92CEFA 1px solid;
-        border-radius: 3px;
-        font-size: 12px;
+        padding-top: 3px;
+        padding-right: 15px;
+        width: 100px;
+        height: 25px;
+        border: #92CEFA 2px solid;
+        border-radius: 90px;
+        font-size: 14px;
         text-align: right;
         background-image: url('../img/share-img/放大鏡.svg');
-        background-size: 15px 15px;
+        background-size: 20px 20px;
         background-repeat: no-repeat; 
-        background-position: left 10%;
+        background-position: left 5% top 1px;
     }
     .navbar-search-countainer{
         display: none;
@@ -47,10 +51,6 @@ input:focus{
     }
 }
 @media (min-width:1200px) {
-    body{
-        font-family: 'Happy Monkey', sans-serif;
-        background-color: #F7F4F7;
-    }
     .navbar-bgc{
         width: 100%;
         background-color: #fff;
