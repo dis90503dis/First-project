@@ -271,10 +271,10 @@
                 <img src="img/share-img/footer-button-flash.svg" alt="icon">
                 <p>急速約單</p>
             </a>
-            <a href="" class="footer-button-search">
+            <div onclick="toggleSearch()" href="" class="footer-button-search">
                 <img src="img/share-img/footer-button-search.svg" alt="icon">
                 <p>搜尋ID</p>
-            </a>
+            </div>
             <a href="" class="footer-button-messenger">
                 <img src="img/share-img/footer-button-messenger.svg" alt="icon">
                 <p>訊息</p>
@@ -285,5 +285,18 @@
             </a>
         </div>
     </div>
+    <div id="searchBox" class="searchbox">
+        <input class="footer-searchbox" type="text" placeholder="請輸入陪玩師ID或名稱">
+    </div>
+<script>
+    function toggleSearch() {
+        var searchBox = document.getElementById('searchBox');
+        searchBox.style.display = 'block';
+    }
+    document.addEventListener('touchmove', function(event){
+    var searchBox = document.getElementById('searchBox');
+    searchBox.style.display = 'none';
+    })
+</script>
 </body>
 </html>
