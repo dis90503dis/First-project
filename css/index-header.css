@@ -51,6 +51,7 @@
         padding-top: 50px;
         padding-bottom: 50px;
         padding-left: 20px;
+        box-sizing: border-box;
     }
     .banner{
         max-width: 1200px;
@@ -62,6 +63,7 @@
         margin: auto;
         align-items: center;
         padding: 10px;
+        box-sizing: border-box;
     }
     .banner-container{
         display: flex;
