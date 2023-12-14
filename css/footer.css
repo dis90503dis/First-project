@@ -95,16 +95,18 @@
     }
     .footer-button img{
         margin-bottom: 5px;
+        width: 52px;
+        height: 30px;
+        box-sizing: border-box;
     } 
     .footer-button-flash img{
-        height: 30px;
     }
     .searchbox{
         display: none;
         width: 100%;     
         background-color: #e8e6e8;
         position: fixed;
-        bottom: 0;
+        bottom: -2px;
         border-top: 1px solid #115485;
         box-sizing: border-box;
     }
