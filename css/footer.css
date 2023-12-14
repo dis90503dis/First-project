@@ -105,6 +105,8 @@
         background-color: #e8e6e8;
         position: fixed;
         bottom: 0;
+        border-top: 1px solid #115485;
+        box-sizing: border-box;
     }
     .searchbox input{
         height: 50px;
