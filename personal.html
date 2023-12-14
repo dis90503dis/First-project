@@ -11,11 +11,18 @@
     <link rel="stylesheet" href="css/personal-photo-wall.css">
     <link rel="stylesheet" href="css/button-click.css">
     <script src="js/personal-change-button.js"></script>
+    <script src="js/personal.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
 </head>
 <body>
     <div class="navbar-bgc">
+        <div id="hamburger-btn" class="hamburger-menu">
+            <div class="hamburger-icon"></div>
+            <div class="hamburger-icon"></div>
+            <div class="hamburger-icon"></div>
+        </div>
         <nav class="navbar">
-            <div>
+            <div class="navbar-search-countainer">
                 <input class="navbar-search" type placeholder="陪玩師ID或暱稱">
             </div>
             <div class="logo">
@@ -32,6 +39,9 @@
                     <div class="text">登入 / 註冊</div>
                 </a>
             </div>
+            <div class="phone-search">
+                <input class="navbar-phone-search" type placeholder="遊戲名稱">
+            </div>
         </nav>
     </div>
     <div class="personal-banner">
@@ -40,13 +50,17 @@
                 <div class="big-picture">
                     <img src="img/Sangonomiya_Kokomi/1.svg" alt="Large Image" id="largeImage">
                 </div>
-                <div class="thumbnails">
-                    <img src="img/Sangonomiya_Kokomi/1.svg" alt="Small Image 1" class="thumbnail" onclick="changeImage('img/Sangonomiya_Kokomi/1.svg')">
-                    <img src="img/Sangonomiya_Kokomi/2.svg" alt="Small Image 2" class="thumbnail" onclick="changeImage('img/Sangonomiya_Kokomi/2.svg')">
-                    <img src="img/Sangonomiya_Kokomi/3.svg" alt="Small Image 3" class="thumbnail" onclick="changeImage('img/Sangonomiya_Kokomi/3.svg')">
-                    <img src="img/Sangonomiya_Kokomi/4.svg" alt="Small Image 4" class="thumbnail" onclick="changeImage('img/Sangonomiya_Kokomi/4.svg')">
-                    <img src="img/Sangonomiya_Kokomi/5.svg" alt="Small Image 4" class="thumbnail" onclick="changeImage('img/Sangonomiya_Kokomi/5.svg')">
-                    <img src="img/Sangonomiya_Kokomi/6.svg" alt="Small Image 4" class="thumbnail" onclick="changeImage('img/Sangonomiya_Kokomi/6.svg')">
+                <div class="pic-frame">
+                    <div id="leftIcon" class="left-icon">◀︎</div>
+                    <div id="thumbnails" class="thumbnails">
+                        <img src="img/Sangonomiya_Kokomi/1.svg" alt="Small Image 1" class="thumbnail" onclick="changeImage('img/Sangonomiya_Kokomi/1.svg')">
+                        <img src="img/Sangonomiya_Kokomi/2.svg" alt="Small Image 2" class="thumbnail" onclick="changeImage('img/Sangonomiya_Kokomi/2.svg')">
+                        <img src="img/Sangonomiya_Kokomi/3.svg" alt="Small Image 3" class="thumbnail" onclick="changeImage('img/Sangonomiya_Kokomi/3.svg')">
+                        <img src="img/Sangonomiya_Kokomi/4.svg" alt="Small Image 4" class="thumbnail" onclick="changeImage('img/Sangonomiya_Kokomi/4.svg')">
+                        <img src="img/Sangonomiya_Kokomi/5.svg" alt="Small Image 4" class="thumbnail" onclick="changeImage('img/Sangonomiya_Kokomi/5.svg')">
+                        <img src="img/Sangonomiya_Kokomi/6.svg" alt="Small Image 4" class="thumbnail" onclick="changeImage('img/Sangonomiya_Kokomi/6.svg')">
+                    </div>
+                    <div id="rightIcon" class="right-icon">▶︎</div>
                 </div>
             </div>
             <div class="describe">
@@ -118,6 +132,36 @@
             </div>
         </div>
     </div>
-    <script src="js/personal.js"></script>
+    <div class="blank"></div>
+    <div id="footerBgc" class="footer-bgc">
+        <div class="footer-button">
+            <a href="index.html" class="footer-button-home">
+                <img src="img/share-img/footer-button-home.svg" alt="icon">
+                <p>首頁</p>
+            </a>
+            <a href="flash_dating.html" class="footer-button-flash">
+                <img src="img/share-img/footer-button-flash.svg" alt="icon">
+                <p>急速約單</p>
+            </a>
+            <div onclick="toggleSearch()" href="" class="footer-button-search">
+                <img src="img/share-img/footer-button-search.svg" alt="icon">
+                <p>搜尋ID</p>
+            </div>
+            <a href="" class="footer-button-messenger">
+                <img src="img/share-img/footer-button-messenger.svg" alt="icon">
+                <p>訊息</p>
+            </a>
+            <a href="" class="footer-button-myself">
+                <img src="img/share-img/footer-button-myself.svg" alt="icon">
+                <p>我的</p>
+            </a>
+        </div>
+    </div>
+    <div id="searchBox" class="searchbox">        
+        <form action="">
+            <input id="footerSearchbox" class="footer-searchbox" type="search" placeholder="請輸入陪玩師ID或名稱">
+        </form>
+    </div>
+<script src="js/index_footer.js"></script>
 </body>
 </html>
