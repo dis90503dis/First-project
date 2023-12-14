@@ -1,4 +1,14 @@
 @media (width < 768px) {
+    .lightbox {
+        display: none;
+    }
+    
+    .lightbox.show {
+        display: flex;
+    }
+    .lightbox img{
+        width: 100%;
+    }
     .big-picture{
         display: none;
     }
@@ -13,11 +23,24 @@
     .thumbnails img{
         width: 100%;
     }
+    .pic-frame{
+        position: relative;
+    }
     .left-icon{
-        display: none;
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 20%;
+        opacity:0;
     }
     .right-icon{
-        display: none;
+        position: absolute;
+        height: 100%;
+        right: 0;
+        top: 0;
+        width: 20%;
+        opacity:0;
     }
     .clicked{
         display: none;

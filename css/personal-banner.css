@@ -6,6 +6,7 @@
     .personal-banner {
         width: 100%;
         background-color: #92CEFA;
+        margin-bottom: -20px;
     }
     .personal-container {
         width: 100%;
@@ -27,6 +28,7 @@
     }
     .personal-name{
         font-size: 24px;
+        margin-top: 5px;
     }
     .introduce-text,.personal-game-name-text,.plan-text,.pricw{
         margin: 10px 0 10px 0;
@@ -99,6 +101,7 @@
         background-color: #E4F3FE;
         border: none;
         margin: 5px;
+        border: #115485 1px solid;
     }
     .personal-blank{
         height: 60px;
