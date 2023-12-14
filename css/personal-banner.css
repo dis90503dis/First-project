@@ -1,12 +1,126 @@
-@media (min-width:1200px) {
+@media (width < 768px) {
+    body{
+        letter-spacing: 1.5px;
+        line-height: 120%;
+    }
     .personal-banner {
         width: 100%;
-        height: 600px;
+        background-color: #92CEFA;
+    }
+    .personal-container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .describe {
+        color: white;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .introduce{
+        display: flex;
+        flex-direction: column;
+    }
+    .personal-name{
+        font-size: 24px;
+    }
+    .introduce-text,.personal-game-name-text,.plan-text,.pricw{
+        margin: 10px 0 10px 0;
+    }
+    .introduce-container {
+        color: #115485;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: #E4F3FE;
+    }
+    .plan-price{
+        padding-left: 10px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        margin-top: 10px;
+        justify-content: start;
+        align-items: center;
+        text-decoration: none;
+        color: #115485;
+        font-size: 16px;
+        width:100%;
+        height: 65px;
+        background-color: #E4F3FE;
+        font-weight: bold;
+    }
+    
+    .a-button a:nth-child(2){
+        position: fixed;
+        bottom: 10px;
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+        width: 40%;
+        height: 45px;
+        background-color: #FF9999;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .a-button{
+        display: flex;
+        justify-content: end;
+    }
+    .a-button a:nth-child(1){
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+        width: 150px;
+        height: 45px;
+        background-color: #FF9999;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .name-button-team button,
+    .plan-button-team button {
+        height: 30px;
+        padding: 0 10px 0 10px;
+        border-radius: 5px;
+        color: #115485;
+        background-color: #E4F3FE;
+        border: none;
+        margin: 5px;
+    }
+    .personal-blank{
+        height: 60px;
+    }
+}
+@media screen and (min-width: 768px){
+    .personal-banner {
+        width: 100%;
         background-color: #92CEFA;
     }
     body{
         letter-spacing: 1px;
         line-height: 120%;
+    }
+    .personal-container {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        align-items: center;
     }
     .describe {
         color: white;
@@ -16,16 +130,6 @@
         height: 550px;
         justify-content: space-around;
     }
-
-    .personal-container {
-        width: 1200px;
-        height: 100%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     .introduce-container {
         color: #115485;
         padding: 10px;
@@ -34,7 +138,6 @@
         height: 100px;
         background-color: #E4F3FE;
     }
-
     .personal-name,
     .introduce-text,
     .personal-game-name-text,
@@ -42,21 +145,18 @@
     .plan-price {
         font-size: 24px;
     }
-
     .personal-name {
         font-size: 36px;
     }
-
     .introduce,
     .personal-game-name {
         display: flex;
     }
-
     .plan-price {
+        align-items: center;
         display: flex;
         justify-content: space-between;
     }
-
     .name-button-team button,
     .plan-button-team button {
         width: 150px;
@@ -67,14 +167,104 @@
         border: none;
         margin: 5px;
     }
-
+    .pricw{
+        display: flex;
+        align-items: center;
+    }
     .banner-foot,
     .name-button-team,
     .a-button {
         display: flex;
         justify-content: space-between;
     }
-
+    .a-button a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 45px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #FF9999;
+        color: white;
+        border-radius: 5px;
+        margin: 10px;
+        font-size: 24px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .personal-banner {
+        width: 100%;
+        background-color: #92CEFA;
+    }
+    body{
+        letter-spacing: 1px;
+        line-height: 120%;
+    }
+    .personal-container {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .describe {
+        color: white;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        height: 550px;
+        justify-content: space-around;
+    }
+    .introduce-container {
+        color: #115485;
+        padding: 10px;
+        box-sizing: border-box;
+        width: 600px;
+        height: 100px;
+        background-color: #E4F3FE;
+    }
+    .personal-name,
+    .introduce-text,
+    .personal-game-name-text,
+    .plan-text,
+    .plan-price {
+        font-size: 24px;
+    }
+    .personal-name {
+        font-size: 36px;
+    }
+    .introduce,
+    .personal-game-name {
+        display: flex;
+    }
+    .plan-price {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    .name-button-team button,
+    .plan-button-team button {
+        width: 150px;
+        height: 30px;
+        border-radius: 5px;
+        color: #115485;
+        background-color: #E4F3FE;
+        border: none;
+        margin: 5px;
+    }
+    .pricw{
+        display: flex;
+        align-items: center;
+    }
+    .banner-foot,
+    .name-button-team,
+    .a-button {
+        display: flex;
+        justify-content: space-between;
+    }
     .a-button a {
         display: flex;
         justify-content: center;
