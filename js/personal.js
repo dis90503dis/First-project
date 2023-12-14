@@ -1,12 +1,11 @@
 var windowVW = $(window).width()
-if(windowVW>768){
     function changeImage(newImageUrl) {
         var largeImage = document.getElementById('largeImage');
         largeImage.src = newImageUrl;
     }
     let imgWidth = $('#thumbnails img').width()
     let imgCount = $('#thumbnails img').length
-
+    alert(imgCount)
     $('#thumbnails img:first').addClass('clicked')
     let index = 0
 
@@ -28,7 +27,4 @@ if(windowVW>768){
             left: -1*(imgCount-1)*(imgWidth+5),
         })
     })
-    }
-else{
-    // $('thumbnails')
-}
+
