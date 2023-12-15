@@ -12,16 +12,22 @@
     .big-picture{
         display: none;
     }
+    .pic-frame{
+        overflow: hidden;
+    }
     .thumbnails {
+        position: relative;
+        z-index: 1;
         margin: auto;
         max-width: 500px;
         width: 100%;
         display: flex;
-        overflow: hidden;
+        flex-wrap: nowrap;
         
     }
     .thumbnails img{
         width: 100%;
+
     }
     .pic-frame{
         position: relative;
@@ -33,6 +39,7 @@
         top: 0;
         width: 20%;
         opacity:0;
+        z-index: 2;
     }
     .right-icon{
         position: absolute;
@@ -41,6 +48,7 @@
         top: 0;
         width: 20%;
         opacity:0;
+        z-index: 2;
     }
     .clicked{
         display: none;
