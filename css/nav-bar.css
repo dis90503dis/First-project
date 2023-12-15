@@ -20,7 +20,7 @@ h1{
         width: 100%;
         height: 50px;
         align-items: center;
-        justify-content:space-between;
+        justify-content:center;
         margin: auto;
     }
     .logo{
@@ -31,19 +31,7 @@ h1{
         width: 100%;
     }
     .navbar-phone-search{
-        box-sizing: border-box;
-        padding-top: 3px;
-        padding-right: 15px;
-        width: 100px;
-        height: 25px;
-        border: #92CEFA 2px solid;
-        border-radius: 90px;
-        font-size: 14px;
-        text-align: right;
-        background-image: url('../img/share-img/放大鏡.svg');
-        background-size: 20px 20px;
-        background-repeat: no-repeat; 
-        background-position: left 5% top 1px;
+        display: none;
     }
     .navbar-search-countainer{
         display: none;
