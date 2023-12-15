@@ -29,10 +29,11 @@ $(document).ready(function() {
                 left: -1 * (imgCount - 1) * (imgWidth + 5),
             });
         });
-    } else {
+    }else {
+    
         $('#thumbnails img').click(function() {
-            // 小屏幕下的點擊事件
         });
+
         $('#leftIcon').click(function() {
             $('#thumbnails').animate({
                 left: imgWidth,
@@ -43,5 +44,6 @@ $(document).ready(function() {
                 left: -1 * imgWidth,
             });
         });
+    
     }
 });
