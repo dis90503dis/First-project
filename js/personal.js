@@ -3,6 +3,8 @@ $(document).ready(function() {
     var imgWidth = $('#thumbnails img').width();
     var imgCount = $('#thumbnails img').length;
     var index = 0;
+    var maxRight = imgCount * -1 +1
+    var i = 0;
     if (windowVW > 768) {
         $('#thumbnails img').click(function() {
             var newImageUrl = $(this).attr('src');
@@ -27,7 +29,6 @@ $(document).ready(function() {
             });
         });
     }else {
-        var i = 0;
         $('#thumbnails img').click(function() {
         });
         $('#leftIcon').click(function() {
