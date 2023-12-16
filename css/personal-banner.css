@@ -39,6 +39,7 @@
         box-sizing: border-box;
         border-radius: 5px;
         background-color: #E4F3FE;
+        margin-bottom: 10px;
     }
     .plan-price{
         padding-left: 10px;

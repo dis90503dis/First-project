@@ -1,18 +1,9 @@
 @media (width < 768px) {
-    .lightbox {
-        display: none;
-    }
-    
-    .lightbox.show {
-        display: flex;
-    }
-    .lightbox img{
-        width: 100%;
-    }
     .big-picture{
         display: none;
     }
     .pic-frame{
+        position: relative;
         overflow: hidden;
     }
     .thumbnails {
@@ -23,21 +14,17 @@
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
-        
     }
     .thumbnails img{
         width: 100%;
 
-    }
-    .pic-frame{
-        position: relative;
     }
     .left-icon{
         position: absolute;
         height: 100%;
         left: 0;
         top: 0;
-        width: 20%;
+        width: 15%;
         opacity:0;
         z-index: 2;
     }
@@ -46,7 +33,7 @@
         height: 100%;
         right: 0;
         top: 0;
-        width: 20%;
+        width: 15%;
         opacity:0;
         z-index: 2;
     }
