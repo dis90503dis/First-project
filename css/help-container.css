@@ -1,11 +1,75 @@
-@media (min-width:1200px) {
+@media (width <= 768px){
+    body{
+        margin: 0;
+        line-height: 150%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        width: 95%;
+        margin: auto;
+        justify-content: start;
+        align-items: center;
+    }
+    .place-an-order{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .step1-6{
+        display: flex;
+        justify-content: start;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .step-icon{
+        font-size: 18px;
+        margin: 20px;
+    }
+    .step-text{
+        border-bottom: 1px solid #115485;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .quick{
+        text-align: center;
+    }
+    .simply-put{
+        text-align: center;
+    }
+    .simply-put-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        margin-left: 1em;
+        text-indent: -1em;
+    }
+
+}
+@media (width > 768px) {
     body{
         margin: 0;
     }
     .container{
         display: flex;
         flex-direction: column;
-        width: 1200px;
+        max-width: 1200px;
+        width: 95%;
         margin: auto;
         justify-content: start;
         align-items: center;
@@ -44,6 +108,7 @@
     }
     .simply-put-container{
         display: flex;
+        justify-content: space-between;
         align-items: center;
         font-size: 16px;
     }

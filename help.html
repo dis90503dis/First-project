@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/nav-bar.css">
     <link rel="stylesheet" href="css/help-container.css">
     <link rel="stylesheet" href="css/footer.css">
+    <script src="js/jquery-3.7.1.js"></script>
 </head>
 <body>
     <div class="navbar-bgc">
@@ -32,7 +33,7 @@
     </div>
     <div class="container">
         <div class="place-an-order">
-            <h3>選人下單</h2>
+            <h1>選人下單</h1>
             <div class="step">
                 <div class="step1-6">
                     <div class="step-icon">step1</div>
@@ -67,11 +68,15 @@
         </div>
         <div class="simply-put">
             <h3>簡單來說</h3>
-            <div class="simply-put-container">
+            <div id="simplyPutContainer" class="simply-put-container">
                 <div class="simply-put-step">１．選人下單＞接受申請<br>２．急速約單＞等待接受</div>
                 <div class="step-link">＞私訊約遊戲＞付單＞陪玩遊戲＞評價，結束！</div>
             </div>
         </div>
+        <ul id="simplyPutStep">
+            <li>1.選人下單＞接受申請＞私訊約遊戲＞付單＞陪玩遊戲＞評價，結束！</li>
+            <li>2.急速約單＞等待接受＞私訊約遊戲＞付單＞陪玩遊戲＞評價，結束！</li>
+        </ul>
     </div>
     <div class="footer">
         <div class="footer-with-help-more">
@@ -107,5 +112,6 @@
             </div>
         </div>
     </div>
+    <script src="js/help.js"></script>
 </body>
 </html>
