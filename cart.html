@@ -37,9 +37,9 @@
         </nav>
     </div>
     <div class="cart-confirm">
-        <div class="cart-confirm-text">
+        <h1 class="cart-confirm-text">
             確認訂單
-        </div>
+        </h1>
     </div>
     <div class="commodity">
         <div class="commodity-describe">
@@ -70,11 +70,23 @@
         </div>
     </div>
     <div class="payment-method">
-        <div class="payment-method-text">
-            支付方式
-            <div class="balance-container">
-                <div class="balance-pay">餘額支付</div>
-                <div class="balance-pay-text">0幣可用</div>
+        <div class="payment-method-direction">
+            <div class="payment-method-text-text">
+                支付方式
+            </div>
+            <div class="payment-method-text">
+                <div class="balance-container">
+                    <div class="balance-pay">餘額支付</div>
+                    <div class="balance-pay-text">0幣可用</div>
+                </div>
+                <div class="balance-container">
+                    <div class="balance-pay">餘額支付</div>
+                    <div class="balance-pay-text">0幣可用</div>
+                </div>
+                <div class="balance-container">
+                    <div class="balance-pay">餘額支付</div>
+                    <div class="balance-pay-text">0幣可用</div>
+                </div>
             </div>
         </div>
         <div class="submit">
@@ -94,7 +106,7 @@
             </div>
             <div class="footer-container">
                 <div>help</div>
-                <a href="">常見問題&教學</a>
+                <a href="help.html">常見問題&教學</a>
                 <a href="">使用者條款</a>
                 <a href="">違法舉報</a>
             </div>
@@ -119,6 +131,37 @@
             </div>
         </div>
     </div>
+    <div class="blank"></div>
+    <div id="footerBgc" class="footer-bgc">
+        <div class="footer-button">
+            <a href="index.html" class="footer-button-home">
+                <img src="img/share-img/footer-button-home.svg" alt="icon">
+                <p>首頁</p>
+            </a>
+            <a href="flash_dating.html" class="footer-button-flash">
+                <img src="img/share-img/footer-button-flash.svg" alt="icon">
+                <p>急速約單</p>
+            </a>
+            <div onclick="toggleSearch()" href="" class="footer-button-search">
+                <img src="img/share-img/footer-button-search.svg" alt="icon">
+                <p>搜尋ID</p>
+            </div>
+            <a href="" class="footer-button-messenger">
+                <img src="img/share-img/footer-button-messenger.svg" alt="icon">
+                <p>訊息</p>
+            </a>
+            <a href="" class="footer-button-myself">
+                <img src="img/share-img/footer-button-myself.svg" alt="icon">
+                <p>我的</p>
+            </a>
+        </div>
+    </div>
+    <div id="searchBox" class="searchbox">        
+        <form action="">
+            <input id="footerSearchbox" class="footer-searchbox" type="search" placeholder="請輸入陪玩師ID或名稱">
+        </form>
+    </div>
     <script src="js/cart.js"></script>
+    <script src="js/index_footer.js"></script>
 </body>
 </html>

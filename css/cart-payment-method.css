@@ -1,20 +1,100 @@
-@media (min-width:1200px) {
+@media (width <= 768px) {
+    .payment-method{
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: auto;
+    }
+    .payment-method-text-text{
+        font-size: 20px;
+        color: #115485;
+        margin: 15px 0 10px 0;
+    }
+    .payment-method-text{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 24px;
+        color: #115485;
+        margin: 15px 0 10px 10px;
+    }
+    .balance-container{
+        font-size: 20px;
+        border: 1px solid #115485;
+        border-radius: 5px;
+        background-color: #DCEBF8;
+        width: 120px;
+        height: 60px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+    }
+    .submit{
+        width: 95%;
+        margin: auto;
+        background-color: #DCEBF8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #DCEBF8;
+        height: 150px;
+        border-radius: 15px;
+        margin-top: 25px;
+        font-size: 20px;
+        color: #115485;
+    }
+    .submit a{
+        text-decoration: none;
+    }
+    .balance{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 90px;
+        background-color: #FF9999;
+        width: 200px;
+        height: 50px;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        margin-top: -30px;
+    }
+    .submit-plan{
+        display: none;
+    }
+}
+@media (width > 768px) {
     .payment-method{
         display: flex;
         justify-content: space-between;
-        width: 1200px;
+        max-width: 1200px;
+        width: 95%;
         margin: auto;
         align-items: start;
         color: #115485;
     }
+    .payment-method-text-text{
+        margin-top: 30px;
+        font-size: 24px;
+        color: #115485;
+    }
     .payment-method-text{
-        margin-top: 50px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: start;
     }
     .balance-container{
         border: 1px solid #115485;
         border-radius: 5px;
         background-color: #DCEBF8;
-        margin-top: 30px;
+        margin: 15px;
         width: 240px;
         height: 85px;
         text-align: center;
@@ -56,7 +136,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 320px;
+        width: 220px;
         height: 65px;
         border-radius: 90px;
         background-color: #FF9999;

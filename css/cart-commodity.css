@@ -1,13 +1,100 @@
 input:focus{
     outline: none;
 }
-@media (min-width:1200px) {
+@media (width <= 768px) {
+    .cart-confirm-text{
+        display: block;
+        margin: 0 10px 0 20px;
+    }
+    .cart-confirm {
+        max-width: 500px;
+        margin: auto;
+        width: 95%;
+        display: flex;
+        border-bottom: 1px solid #115485;
+    }   
+    .cart-confirm-text{
+        font-size: 24px;
+        color: #115485;
+        margin: 15px 0 10px 10px;
+    }
+    .commodity{
+        max-width: 500px;
+        margin: auto;
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .commodity-describe{
+        display: flex;
+        align-items: center;
+    }
+    .commodity-pic{
+        margin: 10px 10px 10px 0;
+    }
+    .commodity-pic img{
+        max-width: 100%;
+    }
+    .commodity-name{
+        font-size: 20px;
+        color: #115485;
+        margin-bottom: 10px;
+    }
+    .commodity-gamename{
+        font-size: 18px;
+        color: #115485;
+    }
+    .counter-container {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .counter-container .reduce{
+        width: 35px;
+        height: 35px;
+        background-color: #DCEBF8;
+        border-top: 1px solid #115485;
+        border-bottom: 1px solid #115485;
+        border-left: 1px solid #115485;
+        border-right: 0px;
+        font-size: 20px;
+        border-radius: 5px 0px 0px 5px;
+    }
+    .counter-container .quantity{
+        width: 35px;
+        height: 35px;
+        box-sizing: border-box;
+        text-align: center;
+        border-radius: 0%;
+        border-top: 1px solid #115485;
+        border-bottom: 1px solid #115485;
+        border-left: 0px;
+        border-right: 0px;
+        font-size: 20px;
+    }
+    .counter-container .increase{
+        width: 35px;
+        height: 35px;
+        border-top: 1px solid #115485;
+        border-bottom: 1px solid #115485;
+        border-left: 0px;
+        border-right: 1px solid #115485;
+        background-color: #DCEBF8;
+        font-size: 20px;
+        border-radius: 0px 5px 5px 0px;
+    }
+    .submit-plan{
+    }
+}
+@media (width > 768px) {
     .cart-confirm{
         display: flex;
         justify-content: start;
         align-items: center;
-        width: 1200px;
+        max-width: 1200px;
         margin: auto;
+        width: 95%;
     }
     .cart-confirm-text{
         font-size: 36px;
@@ -18,7 +105,8 @@ input:focus{
         display: flex;
         justify-content:space-between;
         align-items: center;
-        width: 1200px;
+        max-width: 1200px;
+        width: 100%;
         margin: auto;
         border-top:  1px solid #115485;
     }
