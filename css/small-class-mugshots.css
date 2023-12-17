@@ -1,17 +1,20 @@
 @media (width <= 768px) {
-    .mugshots{
-        width: 1000px;
+    .mugshots {
+        width: 95%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         margin: auto;
-        margin-top: 40px;
+        margin-top: 20px;
     }
+    
     .card img{
-        width: 200px;
-        height: 200px;
+        box-sizing: border-box;
+        width: 100px;
+        height: 100px;
         border: #115485 1px solid;
-        border-radius: 50px;
+        border-radius: 25px;
+        margin: 10px;
     }
     .card a{
         text-decoration: none;
@@ -22,13 +25,14 @@
         text-align: center;
         font-size: 20px;
         color: #115485;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
         margin-top:10px;
     }
 }
 @media (width > 768px) {
     .mugshots{
-        width: 1000px;
+        max-width: 1000px;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -40,6 +44,7 @@
         height: 200px;
         border: #115485 1px solid;
         border-radius: 50px;
+        margin: 10px;
     }
     .card a{
         text-decoration: none;
