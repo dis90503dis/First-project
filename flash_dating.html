@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/flash_dating.css">
     <link rel="stylesheet" href="css/flash_dating_flash-wait.css">
+    <script src="js/jquery-3.7.1.js"></script>
 </head>
 <body>
     <div class="navbar-bgc">
@@ -68,7 +69,7 @@
         <div id="flashWaitContainer" class="flash-wait-container">
             <div id="finding" class="finding">
                 <div class="wait-name">于靖</div>
-                <div class="solid"></div>
+                <div class="flash-solid"></div>
                 <div class="flash-game">原神</div>
                 <div class="flash-gender">女生</div>
                 <div class="flash-remark">聲音好聽</div>
@@ -109,6 +110,37 @@
             </div>
         </div>
     </div>
+    <div class="blank"></div>
+    <div id="footerBgc" class="footer-bgc">
+        <div class="footer-button">
+            <a href="index.html" class="footer-button-home">
+                <img src="img/share-img/footer-button-home.svg" alt="icon">
+                <p>首頁</p>
+            </a>
+            <a href="flash_dating.html" class="footer-button-flash">
+                <img src="img/share-img/footer-button-flash.svg" alt="icon">
+                <p>急速約單</p>
+            </a>
+            <div onclick="toggleSearch()" href="" class="footer-button-search">
+                <img src="img/share-img/footer-button-search.svg" alt="icon">
+                <p>搜尋ID</p>
+            </div>
+            <a href="" class="footer-button-messenger">
+                <img src="img/share-img/footer-button-messenger.svg" alt="icon">
+                <p>訊息</p>
+            </a>
+            <a href="" class="footer-button-myself">
+                <img src="img/share-img/footer-button-myself.svg" alt="icon">
+                <p>我的</p>
+            </a>
+        </div>
+    </div>
+    <div id="searchBox" class="searchbox">        
+        <form action="">
+            <input id="footerSearchbox" class="footer-searchbox" type="search" placeholder="請輸入陪玩師ID或名稱">
+        </form>
+    </div>
     <script src="js/flash_dating.js"></script>
+    <script src="js/index_footer.js"></script>
 </body>
 </html>

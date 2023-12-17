@@ -9,7 +9,7 @@ btn.addEventListener("click", function () {
     flashWaitContainer.innerHTML = flashWaitContainer.innerHTML + `
         <div id="finding" class="finding">
             <div class="wait-name">于靖</div>
-            <div class="solid"></div>
+            <div class="flash-solid"></div>
             <div class="flash-game">${game.value}</div>
             <div class="flash-gender">${gender.value}</div>
             <div class="flash-remark">${remark.value}</div>

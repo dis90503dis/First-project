@@ -1,6 +1,71 @@
-@media (min-width:1200px) {
+@media (width <= 768px){
     .flash-wait{
-        width: 1200px;
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        margin-top: 20px;
+    }
+    h3{
+        font-size: 24px;
+        font-weight: bold;
+        color: #115485;
+    }
+    .flash-wait-container{
+        background-color: #92CEFA;
+        margin: auto;
+        padding-bottom: 20px;
+        margin-top: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .finding{
+        max-width: 450px;
+        width: 90%;
+        height: 170px;
+        background-color: #DCEBF8;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        margin-top: 20px;
+    }
+    .wait-name{
+        font-size: 24px;
+        color: #115485;
+        font-weight: bold;
+    }
+    .flash-solid{
+        width: 85%;
+        height: 1px;
+        background-color: #92CEFA;
+        margin: 10px 0 15px 0;
+    }
+    .flash-game{
+        font-size: 20px;
+        color: #115485;
+        margin: 5px;
+    }
+    .flash-gender{
+        font-size: 20px;
+        color: #115485;
+        margin: 5px;
+    }
+    .flash-remark{
+        font-size: 20px;
+        color: #115485;
+        margin: 5px;
+    }
+}
+@media (width > 768px) {
+    .flash-wait{
+        max-width: 1200px;
+        width: 100%;
         margin: auto;
         text-align: center;
         margin-top: 50px;
@@ -8,6 +73,7 @@
     h3{
         font-size: 40px;
         color: #115485;
+        font-weight: bold;
     }
     .flash-wait-container{
         background-color: #92CEFA;
@@ -19,7 +85,8 @@
         flex-direction: column;
     }
     .finding{
-        width: 1100px;
+        max-width: 1100px;
+        width: 90%;
         height: 200px;
         background-color: #DCEBF8;
         border-radius: 20px;
@@ -37,8 +104,8 @@
         font-size: 32px;
         color: #115485;
     }
-    .solid{
-        width: 950px;
+    .flash-solid{
+        width: 85%;
         height: 1px;
         background-color: #92CEFA;
         margin: 20px 0 25px 0;
