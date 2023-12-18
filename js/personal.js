@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     var windowVW = $(window).width();
     var imgWidth = $('#thumbnails img').width();
     var imgCount = $('#thumbnails img').length;
@@ -6,6 +7,11 @@ $(document).ready(function() {
     var maxRight = imgCount * -1 + 1;
     var i = 0;
     var isAnimating = false;
+
+    $(window).resize(function() {
+        windowVW = $(window).width();
+        imgWidth = $('#thumbnails img').width();
+    });
 
     if (windowVW > 768) {
         $('#thumbnails img').click(function() {
@@ -66,7 +72,7 @@ $(document).ready(function() {
             Y = moveEndY - startY;
         
             if (!isAnimating) {
-                if (Math.abs(X) > Math.abs(Y) && X > 0 && i < 0) {
+                if (Math.abs(X) > Math.abs(Y)+30 && X > 0 && i < 0) {
                     isAnimating = true;
                     i = i + 1;
                     $('#thumbnails').animate({
@@ -74,7 +80,7 @@ $(document).ready(function() {
                     }, function() {
                         isAnimating = false;
                     });
-                } else if (Math.abs(X) > Math.abs(Y) && X < 0 && i > maxRight) {
+                } else if (Math.abs(X) > Math.abs(Y)+30 && X < 0 && i > maxRight) {
                     isAnimating = true;
                     i = i - 1;
                     $('#thumbnails').animate({

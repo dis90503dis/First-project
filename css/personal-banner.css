@@ -57,6 +57,7 @@
         height: 65px;
         background-color: #E4F3FE;
         font-weight: bold;
+        z-index: 3;
     }
     
     .a-button a:nth-child(2){
@@ -74,6 +75,7 @@
         background-color: #FF9999;
         border-radius: 5px;
         font-weight: bold;
+        z-index: 4;
     }
     .a-button{
         display: flex;
