@@ -1,0 +1,4 @@
+@include btn(primary, $primary);
+@include btn(secondary, $secondary);
+@include btn-outline(primary, $primary);
+@include btn-outline('white', $white);

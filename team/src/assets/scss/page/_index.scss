@@ -1,0 +1,50 @@
+$max:3;
+.home_banner{
+    @for $i from 1 through $max{
+        background-image: url(../../assets/images/home/banner0#{$i}.jpg);
+    }
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left 47%  top 50%;
+        height: 555px;
+        overflow: hidden;
+}
+.home_banner02{
+    min-width: 300px;
+    max-width: 500px;
+    width: 35%;
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+}
+.home_banner03{
+    min-width: 300px;
+    max-width: 500px;
+    width: 35%;
+    position: absolute;
+    top: -100px;
+    left: -130px;
+}
+.home_banner_textbackground{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 36px;
+    max-width: 1200px;
+    width: 100%;
+    height: 291px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: $banner-white;
+    text-align: center;
+    h1{
+        font-size: 36px;
+        display: inline-block;
+        @media(width>=1200px){
+            font-size: 48px;
+        }
+    }
+}

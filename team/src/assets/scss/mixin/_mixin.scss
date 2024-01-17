@@ -1,0 +1,35 @@
+@mixin btn($class, $bgc, $fz: 16px) {
+    .btn-#{$class} {
+        background-color: $bgc;
+        color: $white;
+        font-size: $fz;
+        font-weight: $fw-bold;
+        border-radius: $border-r-1;
+        padding: 8px 16px 8px 16px;
+        border: 1px solid $bgc;
+        cursor: pointer;
+
+        &:hover {
+            background-color: darken($bgc, 10);
+            border: 1px solid darken($bgc, 10);
+        }
+    }
+}
+
+@mixin btn-outline($class, $color, $fz: 16px) {
+    .btn-outline-#{$class} {
+        background-color: transparent;
+        color: $color;
+        font-size: $fz;
+        font-weight: $fw-bold;
+        border-radius: $border-r-1;
+        padding: 8px 16px 8px 16px;
+        border: 1px solid $color;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color;
+            color: $white;
+        }
+    }
+}
