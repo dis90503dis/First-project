@@ -1,16 +1,17 @@
-$max:3;
 .home_banner{
-    @for $i from 1 through $max{
-        background-image: url(../../assets/images/home/banner0#{$i}.jpg);
-    }
         position: relative;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: left 47%  top 50%;
         height: 555px;
         overflow: hidden;
+        margin: 0 auto;
 }
-.home_banner02{
+.home_banner01 {
+    position: absolute;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.home_banner01_1{
     min-width: 300px;
     max-width: 500px;
     width: 35%;
@@ -18,7 +19,7 @@ $max:3;
     bottom: -100px;
     right: -100px;
 }
-.home_banner03{
+.home_banner01_2{
     min-width: 300px;
     max-width: 500px;
     width: 35%;
@@ -47,4 +48,27 @@ $max:3;
             font-size: 48px;
         }
     }
+}
+.carousel_buttons{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 2;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.carousel_button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    margin: 10px;
+}
+.active {
+    background-color: #7A7A7A;
+}
+.home_banner01 {
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(100%);
 }
